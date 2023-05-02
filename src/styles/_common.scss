@@ -1,0 +1,61 @@
+@import './mixins';
+.desktop{
+    @include devices(lg) {
+        @include toggleVisibility(inline-block)
+     }
+     @include devices(md) {
+         @include toggleVisibility(none)
+     }
+     @include devices(sm) {
+         @include toggleVisibility(none)
+     }
+     @include devices(xs) {
+        @include toggleVisibility(none)
+    }
+} 
+
+.desktop_and_table{
+    @include devices(lg) {
+        @include toggleVisibility(inline-block)
+     }
+     @include devices(md) {
+         @include toggleVisibility(inline-block)
+     }
+     @include devices(sm) {
+         @include toggleVisibility(none)
+     }
+     @include devices(xs) {
+        @include toggleVisibility(none)
+    }
+}
+
+.tablet{
+    @include devices(lg) {
+        @include toggleVisibility(none)
+     }
+     @include devices(md) {
+         @include toggleVisibility(inline-block)
+     }
+     @include devices(sm) {
+         @include toggleVisibility(none)
+     }
+     @include devices(xs) {
+        @include toggleVisibility(none)
+    }
+}
+
+.mobile{
+    @include devices(lg) {
+        @include toggleVisibility(none)
+     }
+     @include devices(md) {
+         @include toggleVisibility(none)
+     }
+     @include devices(sm) {
+         @include toggleVisibility(inline-block)
+     }
+     @include devices(xs) {
+        @include toggleVisibility(inline-block)
+    }
+}
+

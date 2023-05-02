@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.tariff_speed_icons {
+    border: 1px solid $borderColor;
+    text-align: center;
+}
+ 
+.tariff_speed_text {
+    border: 1px solid $borderColor;
+    text-align: center;
+}
+
+.tariff_index {
+    @include devices(lg) {
+        border-right: 1px solid $borderColor;
+        text-align: center;
+        padding-top: 3rem;
+    }
+}
+
+.tariff_container {
+    border: 1px solid $borderColor;
+    background-color: $backgroundColor;
+    margin: 1rem !important;
+    padding: 0.5rem !important;
+}
+
+.tariff_price {
+    text-align: end;
+    font-size: 1.3rem;
+}
+
+.tariff_button {
+    text-align: end;
+    padding-top: 2rem;
+}
+
+.tariff_upload_margin {
+    margin-top: 1rem;
+}
+
+.tariff_benefits {
+    padding-left: 4rem;
+}
